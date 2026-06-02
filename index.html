@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koperasi Pinjaman Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">Koperasi</span>
+        <p>Pinjaman Online Terpercaya</p>
+      </div>
+      <nav class="site-nav">
+        <a href="#fitur">Fitur</a>
+        <a href="#login">Login</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Solusi Kredit Koperasi</span>
+          <h1>Koperasi Pinjaman Online untuk UMKM dan Individu</h1>
+          <p>Mengelola pinjaman, persetujuan, dan profil secara profesional dengan dashboard admin dan akun peminjam.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#login">Masuk Sekarang</a>
+            <a class="btn secondary" href="#fitur">Lihat Fitur</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-highlight">
+            <p>Akun Profesional</p>
+            <ul>
+              <li>Admin Dashboard</li>
+              <li>Pengajuan Pinjaman</li>
+              <li>Manajemen Anggota</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section features-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Fitur Lengkap</span>
+          <h2>Fitur untuk Admin dan Peminjam</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Dashboard Admin</h3>
+            <p>Kelola pengajuan pinjaman, verifikasi anggota, dan monitor performa koperasi dalam satu panel.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Akun Peminjam</h3>
+            <p>Ajukan pinjaman, lihat status, dan kelola riwayat cicilan secara mudah.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Laporan Real-Time</h3>
+            <p>Informasi keuangan dan status pengajuan selalu terupdate secara instan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="login" class="section login-section">
+      <div class="container login-grid">
+        <div class="login-panel">
+          <div class="panel-header">
+            <h2>Login Akun</h2>
+            <p>Gunakan akun admin atau peminjam untuk mengakses dashboard.</p>
+          </div>
+          <form id="loginForm" class="login-form">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="admin@koperasi.com" required />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="********" required />
+
+            <label for="role">Pilih Peran</label>
+            <select id="role" required>
+              <option value="admin">Admin</option>
+              <option value="borrower">Peminjam</option>
+            </select>
+
+            <button type="submit" class="btn primary">Masuk</button>
+            <p id="loginError" class="form-error"></p>
+          </form>
+        </div>
+        <div class="login-info">
+          <div class="info-card">
+            <h3>Contoh Akun</h3>
+            <ul>
+              <li><strong>Admin</strong><br />admin@koperasi.com / <code>Admin123!</code></li>
+              <li><strong>Peminjam</strong><br />user@koperasi.com / <code>Borrower123!</code></li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Manfaat Sistem</h3>
+            <p>Antarmuka bersih, fitur responsif, dan alur pinjaman digital yang sesuai kebutuhan koperasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section dashboard-section hidden">
+      <div class="container">
+        <div class="dashboard-header">
+          <div>
+            <span class="eyebrow">Dashboard</span>
+            <h2 id="dashboardTitle">Panel</h2>
+          </div>
+          <button id="logoutButton" class="btn secondary">Keluar</button>
+        </div>
+        <div id="dashboardContent"></div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Kontak</span>
+          <h2>Hubungi Kami</h2>
+          <p>Tim dukungan siap membantu pertanyaan seputar produk pinjaman koperasi dan peminjaman online.</p>
+        </div>
+        <div class="contact-card">
+          <p>Email: support@koperasi.com</p>
+          <p>Telepon: +62 812 3456 7890</p>
+          <p>Alamat: Jalan Niaga No. 27, Jakarta</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Koperasi Pinjaman Online. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
