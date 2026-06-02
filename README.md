@@ -1,3 +1,3 @@
 # wahid-dan-sodikin
-tugas kelompok
-slebew
+nama kelompok
+ayam jantan
